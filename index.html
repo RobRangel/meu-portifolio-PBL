@@ -18,7 +18,7 @@
       }
       html {
           height: 100%;
-          scroll-behavior: smooth; /* Adiciona rolagem suave */
+          scroll-behavior: smooth; /* Garante a rolagem suave */
       }
       * {
           box-sizing: border-box;
@@ -285,7 +285,7 @@
           font-size: 1.2rem;
           color: #6b7280;
           font-weight: 500;
-          overflow: hidden; /* Garante que a imagem se ajuste ao radius */
+          overflow: hidden; 
       }
       .about-image img {
           width: 100%;
@@ -362,12 +362,22 @@
           margin-bottom: 2rem;
           text-align: center;
       }
-      .pbl-content p {
+      .pbl-content p, .pbl-content ul {
           font-size: 1.1rem;
           line-height: 1.8;
           color: #4b5563;
           margin-bottom: 1.5rem;
-          white-space: pre-wrap; /* Preserva as quebras de linha do seu texto */
+      }
+      /* Estilo da lista do PBL para humanizar */
+      .pbl-content ul {
+          text-align: left;
+          max-width: 90%;
+          margin: 1.5rem auto;
+          line-height: 1.8;
+          list-style-position: inside; /* Coloca os bullets dentro */
+      }
+      .pbl-content li {
+          margin-bottom: 0.5rem;
       }
       .back-button {
           display: inline-block;
@@ -410,8 +420,7 @@
           }
       }
   </style>
-  <style>@view-transition { navigation: auto; }</style>
-</head>
+  </head>
 <body>
   <div id="main-page">
     <section class="hero">
@@ -514,7 +523,7 @@
             </div>
           </div>
           <h3 class="project-title" id="project-5-title">Peça 5: Indique um Amigo</h3>
-          <p class="project-description" id="project-5-description">Esta peça cumpre o mote 'Promocional (Livre)'. Ela representa o design de um e-mail marketing para a campanha 'Indique um Amigo' do 'Elevation Course'. A estratégia é usar a base de alunos atuais como promotores da marca, oferecendo um benefício mútuo ('Vocês dois ganham 2 AULAS GRÁTIS'). Isso reduz o custo de aquisição de novos clientes e gera prova social. O design mantém a identidade visual da marca (cores, fontes, logo) e inclui um Call to Action (CTA) claro ('PEGAR MEU LINK DE INDICAÇÃO'). O rodapé com informações legais simula as boas práticas de e-mail marketing.</p>
+          <p class="project-description"id="project-5-description">Esta peça cumpre o mote 'Promocional (Livre)'. Ela representa o design de um e-mail marketing para a campanha 'Indique um Amigo' do 'Elevation Course'. A estratégia é usar a base de alunos atuais como promotores da marca, oferecendo um benefício mútuo ('Vocês dois ganham 2 AULAS GRÁTIS'). Isso reduz o custo de aquisição de novos clientes e gera prova social. O design mantém a identidade visual da marca (cores, fontes, logo) e inclui um Call to Action (CTA) claro ('PEGAR MEU LINK DE INDICAÇÃO'). O rodapé com informações legais simula as boas práticas de e-mail marketing.</p>
         </div>
       </div>
     </section>
@@ -551,29 +560,27 @@
       </div>
     </footer>
   </div>
+
   <div id="pbl-page" class="pbl-page">
     <div class="container">
       <div class="pbl-content">
         <a href="#" class="back-button" onclick="showMainPage(); return false;">← Voltar ao Portfólio</a>
         <h1>Sobre a Elaboração deste Portfólio (PBL)</h1>
-        <p>Este portfólio é um trabalho prático da matéria de Comunicação e Expressão Publicitária, do curso de Publicidade e Propaganda da UNINTER. A ideia era usar o método PBL (Aprendizagem Baseada em Problemas) para criar um portfólio online real, mostrando o que aprendi.
-
-**Sobre a Plataforma:** Escolhi usar o Canva, mais especificamente a ferramenta Canva Code (via chat com IA), para criar o site. O trabalho pedia uma plataforma online que permitisse personalizar o visual, e o Canva Code me deu essa liberdade. Consegui criar um design único para a minha marca "Elevation", o que não seria possível em redes sociais, por exemplo.
-
-**Sobre as Peças:** O trabalho pedia de 5 a 10 peças, incluindo obrigatoriamente uma de Serviços e uma de Produtos. Criei 5 peças ligadas à minha área, que é o ensino de inglês. Montei uma marca fictícia ("Elevation Course" e "Elevation Express") e criei campanhas para ela:
-
-1.  **Serviços (Obrigatória):** Um carrossel de Instagram para o curso principal.
-2.  **Produtos (Obrigatória):** Um anúncio para um curso rápido (de menor valor).
-3.  **Institucional (Livre):** Uma peça mostrando os valores da marca (o "manifesto").
-4.  **Cidadania (Livre):** Um infográfico sobre inglês e acesso à informação.
-5.  **Promocional (Livre):** Um design de e-mail marketing para a campanha "Indique um Amigo".
-
-Escolhi essas peças para mostrar que sei aplicar a comunicação em diferentes situações (vender, construir marca, informar, promover), como o curso pede.
-
-**Sobre Mim no Projeto:** Este portfólio me apresenta como alguém que une comunicação e ensino. Tentei mostrar que sei usar as ferramentas da publicidade: pensar na estratégia (criar a marca e as campanhas), escrever os textos (das peças e das defesas), cuidar do visual (design das peças e do site) e usar diferentes formatos (carrossel, anúncio, infográfico, e-mail). Cada peça foi feita pensando em como a publicidade pode ajudar na área da educação.
-
-**Minha Experiência:** O mais difícil foi usar o Canva Code pelo chat, pois precisei ser bem claro nos meus pedidos para a IA montar o site do jeito certo. Usar minha experiência real como professor de inglês ajudou a deixar o projeto mais autêntico. O processo todo me mostrou como é importante ter um visual e uma mensagem consistentes para criar uma marca forte.</p>
-      </div>
+        
+        <p>Este portfólio é um trabalho prático da matéria de Comunicação e Expressão Publicitária, do curso de Publicidade e Propaganda da UNINTER. A ideia era usar o método PBL (Aprendizagem Baseada em Problemas) para criar um portfólio online real, mostrando o que aprendi.</p>
+        <p><strong>Sobre a Plataforma:</strong> Escolhi usar o Canva, mais especificamente a ferramenta Canva Code (via chat com IA), para criar o site. O trabalho pedia uma plataforma online que permitisse personalizar o visual, e o Canva Code me deu essa liberdade. Consegui criar um design único para a minha marca "Elevation", o que não seria possível em redes sociais, por exemplo.</p>
+        <p><strong>Sobre as Peças:</strong> O trabalho pedia de 5 a 10 peças, incluindo obrigatoriamente uma de Serviços e uma de Produtos. Criei 5 peças ligadas à minha área, que é o ensino de inglês. Montei uma marca fictícia ("Elevation Course" e "Elevation Express") e criei campanhas para ela:</p>
+        <ul style="text-align: left; max-width: 90%; margin: 1.5rem auto; line-height: 1.8; list-style-position: inside;">
+            <li><strong>Serviços (Obrigatória):</strong> Um carrossel de Instagram para o curso principal.</li>
+            <li><strong>Produtos (Obrigatória):</strong> Um anúncio para um curso rápido (de menor valor).</li>
+            <li><strong>Institucional (Livre):</strong> Uma peça mostrando os valores da marca (o "manifesto").</li>
+            <li><strong>Cidadania (Livre):</strong> Um infográfico sobre inglês e acesso à informação.</li>
+            <li><strong>Promocional (Livre):</strong> Um design de e-mail marketing para a campanha "Indique um Amigo".</li>
+        </ul>
+        <p>Escolhi essas peças para mostrar que sei aplicar a comunicação em diferentes situações (vender, construir marca, informar, promover), como o curso pede.</p>
+        <p><strong>Sobre Mim no Projeto:</strong> Este portfólio me apresenta como alguém que une comunicação e ensino. Tentei mostrar que sei usar as ferramentas da publicidade: pensar na estratégia (criar a marca e as campanhas), escrever os textos (das peças e das defesas), cuidar do visual (design das peças e do site) e usar diferentes formatos (carrossel, anúncio, infográfico, e-mail). Cada peça foi feita pensando em como a publicidade pode ajudar na área da educação.</p>
+        <p><strong>Minha Experiência:</strong> O mais difícil foi usar o Canva Code pelo chat, pois precisei ser bem claro nos meus pedidos para a IA montar o site do jeito certo. Usar minha experiência real como professor de inglês ajudou a deixar o projeto mais autêntico. O processo todo me mostrou como é importante ter um visual e uma mensagem consistentes para criar uma marca forte.</p>
+        </div>
     </div>
   </div>
 
@@ -641,7 +648,7 @@ Escolhi essas peças para mostrar que sei aplicar a comunicação em diferentes 
                   }
               });
           });
-          // Inicializa o carrossel no primeiro slide (opcional, mas boa prática)
+          // Inicializa o carrossel no primeiro slide
           showSlide(0);
       });
   </script>
